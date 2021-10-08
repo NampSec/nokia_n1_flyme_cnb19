@@ -1,0 +1,3 @@
+import init.internal_props.rc
+on init
+   write /proc/sys/kernel/kptr_restrict 2

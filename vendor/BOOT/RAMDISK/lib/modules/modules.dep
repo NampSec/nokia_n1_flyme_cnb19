@@ -1,0 +1,36 @@
+bcmdhd.ko: cfg80211.ko
+SOCWATCH1_5.ko:
+sep3_15.ko:
+pax.ko:
+snd-soc-sst-platform.ko:
+snd-intel-sst.ko: snd-soc-sst-platform.ko
+snd-merr-saltbay-wm8958.ko: snd-soc-wm8994.ko snd-soc-wm-hubs.ko
+snd-merr-dpcm-wm8958.ko: snd-soc-wm8994.ko snd-soc-wm-hubs.ko
+snd-moor-dpcm-florida.ko:
+snd-soc-florida.ko: snd-soc-wm-adsp.ko snd-soc-arizona.ko
+snd-soc-wm8994.ko: snd-soc-wm-hubs.ko
+snd-soc-wm-hubs.ko:
+snd-soc-arizona.ko:
+snd-soc-wm-adsp.ko: snd-soc-arizona.ko
+cfg80211.ko:
+mac80211.ko: cfg80211.ko
+arizona-i2c.ko:
+videobuf-core.ko:
+videobuf-vmalloc.ko: videobuf-core.ko
+dfrgx.ko: tngdisp.ko
+tngdisp.ko:
+hdmi_audio.ko: tngdisp.ko
+fps_throttle.ko:
+bcm_bt_lpm.ko:
+atomisp-css2401a0_v21.ko: videobuf-vmalloc.ko videobuf-core.ko
+atomisp-css2400b0_v21.ko: videobuf-vmalloc.ko videobuf-core.ko
+atomisp-css2401a0_legacy_v21.ko: videobuf-vmalloc.ko videobuf-core.ko
+s5k6b2yx.ko:
+m10mo_isp.ko:
+ov680.ko:
+libmsrlisthelper.ko:
+m10mo_spi.ko: m10mo_isp.ko
+lm3559.ko:
+ov885x.ko:
+ov5693.ko:
+test_nx.ko:

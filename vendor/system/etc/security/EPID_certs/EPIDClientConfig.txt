@@ -1,0 +1,3 @@
+epidparamcertfilepath = /system/etc/security/EPID_certs/epid_paramcert.dat
+x509groupcertfilepath = /system/etc/security/EPID_certs/
+legacycertmappingfilepath = /system/etc/security/EPID_certs/Moorefield.csv

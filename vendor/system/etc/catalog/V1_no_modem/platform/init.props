@@ -1,0 +1,6 @@
+# software config - informative only
+ro.swconf.info=V1_no_modem
+
+ro.sf.lcd_density=320
+panel.physicalWidthmm=132
+panel.physicalHeightmm=198
