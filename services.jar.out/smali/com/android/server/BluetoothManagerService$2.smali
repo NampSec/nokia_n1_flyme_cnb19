@@ -112,9 +112,13 @@
     :cond_0
     :goto_0
 
-    iget-object v2, p0, Lcom/android/server/BluetoothManagerService$2;->this$0:Lcom/android/server/BluetoothManagerService;
+    move-object/from16 v0, p0
 
-    invoke-virtual {v2, p2}, Lcom/android/server/BluetoothManagerService;->flymeProcessMeizuDeviceNamaChange(Landroid/content/Intent;)V
+    iget-object v2, v0, Lcom/android/server/BluetoothManagerService$2;->this$0:Lcom/android/server/BluetoothManagerService;
+
+    move-object/from16 v0, p2
+
+    invoke-virtual {v2, v0}, Lcom/android/server/BluetoothManagerService;->flymeProcessMeizuDeviceNamaChange(Landroid/content/Intent;)V
 
     return-void
 
