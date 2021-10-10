@@ -8241,7 +8241,7 @@
     .line 1712
     :cond_3
     :try_start_1
-    invoke-virtual {p0, v8, p2, v1}, Lcom/android/server/LocationManagerService;->reportLocationAccessNoThrow(ILjava/lang/String;I)Z
+    invoke-virtual {p0, v8, p2, v1}, Lcom/android/server/LocationManagerService;->hook_reportLocationAccessNoThrow(ILjava/lang/String;I)Z
 
     move-result v9
 

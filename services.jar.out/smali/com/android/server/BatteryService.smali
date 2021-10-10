@@ -2999,6 +2999,17 @@
     .locals 3
 
     .prologue
+    
+    invoke-static/range {p0 .. p0}, Lcom/android/server/BatteryService$FlymeInjector;->shutdownIfNoPowerLocked(Lcom/android/server/BatteryService;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_flyme_0
+
+    return-void
+
+    :cond_flyme_0
+    
     const/4 v1, 0x7
 
     invoke-direct {p0, v1}, Lcom/android/server/BatteryService;->isPoweredLocked(I)Z
@@ -3024,6 +3035,9 @@
 
     .line 288
     :cond_0
+    
+    invoke-static/range {p0 .. p0}, Lcom/android/server/BatteryService$FlymeInjector;->writeMessageToFileIfNoPowerLocked(Lcom/android/server/BatteryService;)V
+    
     iget-object v1, p0, Lcom/android/server/BatteryService;->mHandler:Landroid/os/Handler;
 
     new-instance v2, Lcom/android/server/BatteryService$2;

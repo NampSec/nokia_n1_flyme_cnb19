@@ -5611,6 +5611,9 @@
 
     .local v16, "allowStart":Z
     :try_start_12
+    
+    invoke-static/range {v36 .. v36}, Lcom/android/server/am/BroadcastQueue$FlymeBroadcastQueueInjector;->setCurrentBroadcastRecord(Lcom/android/server/am/BroadcastRecord;)V
+    
     move-object/from16 v0, v24
 
     iget-object v4, v0, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;

@@ -1107,6 +1107,9 @@
 
     .end local v2    # "intent":Landroid/content/Intent;
     :cond_3
+    
+    invoke-direct/range {p0 .. p2}, Lcom/android/server/BluetoothManagerService;->flymeChangeBluetoothName(II)V
+    
     return-void
 
     :cond_4

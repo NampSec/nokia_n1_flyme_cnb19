@@ -8132,6 +8132,8 @@
 
     iput v2, v0, Lcom/android/server/wm/DisplayContent;->pendingLayoutChanges:I
 
+    invoke-static/range {p0 .. p0}, Lcom/android/server/wm/WindowManagerService$FlymeInjector;->applyDarkStatusBarTheme(Lcom/android/server/wm/WindowManagerService;)V
+
     .line 9752
     const-string v2, "after finishPostLayoutPolicyLw"
 

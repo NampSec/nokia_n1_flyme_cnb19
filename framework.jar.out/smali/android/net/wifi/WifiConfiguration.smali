@@ -578,6 +578,8 @@
 
     iput-object v1, p0, Landroid/net/wifi/WifiConfiguration;->mIpConfiguration:Landroid/net/IpConfiguration;
 
+    invoke-static/range {p0 .. p0}, Landroid/net/wifi/WifiConfiguration$FlymeInjector;->initFlymeExtraFields(Landroid/net/wifi/WifiConfiguration;)V
+
     const/4 v1, 0x6
 
     iput v1, p0, Landroid/net/wifi/WifiConfiguration;->channel:I
@@ -1019,6 +1021,8 @@
     iget v1, p1, Landroid/net/wifi/WifiConfiguration;->numNoInternetAccessReports:I
 
     iput v1, p0, Landroid/net/wifi/WifiConfiguration;->numNoInternetAccessReports:I
+
+    invoke-static/range {p0 .. p1}, Landroid/net/wifi/WifiConfiguration$FlymeInjector;->initFlymeExtraFields(Landroid/net/wifi/WifiConfiguration;Landroid/net/wifi/WifiConfiguration;)V
 
     iget v1, p1, Landroid/net/wifi/WifiConfiguration;->channel:I
 
